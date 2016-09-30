@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+When a program says it should be built in Rails 4, it probably should be done in Rails 4 and not Rails 5.
 
-Things you may want to cover:
+App hosted only locally as of now (9/29/16).
 
-* Ruby version
+Source: https://mackenziechild.me/12-in-12/1/
 
-* System dependencies
+* Ruby 2.3.1
 
-* Configuration
+* Rails 5.0.0.1
 
-* Database creation
+* Added record_tag_helper 1.0.0 to use div_for and older Devise gem functions. 
+* This is necessary for the /views/comments.html.erb a few other Views.
 
-* Database initialization
+* before_filter not supported with Devise 4.0. before_filter replaced with
+* before_action through the app when necessary.
 
-* How to run the test suite
+* Username function not implemented yet.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
