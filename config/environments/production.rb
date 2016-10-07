@@ -17,6 +17,7 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  #config.serve_static_assets = false
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -41,6 +42,9 @@ Rails.application.configure do
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
+
+  # Generate digests for assets URLs.
+  config.assets.digest = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -84,5 +88,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   #need to enable config for prod
-  #config.action_mailer.default_url_options = { :host => Rails.application.secrets.domain_name }
+  config.action_mailer.default_url_options = { :host => Rails.application.secrets.domain_name }
 end
