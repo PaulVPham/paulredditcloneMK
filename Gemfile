@@ -18,6 +18,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'record_tag_helper', '~> 1.0'
+gem 'pg', '~> 0.19.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -27,8 +28,4 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg', '~> 0.19.0'
 end
