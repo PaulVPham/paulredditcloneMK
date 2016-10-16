@@ -76,6 +76,7 @@ class LinksController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_link
+puts "params:: #{params.inspect}"
       @link = Link.find(params[:id])
     end
 
